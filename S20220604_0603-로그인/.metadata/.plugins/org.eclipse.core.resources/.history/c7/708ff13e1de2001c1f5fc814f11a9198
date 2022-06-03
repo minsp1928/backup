@@ -1,0 +1,7 @@
+@charset "EUC-KR";
+.login_box {
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 6px 7px 4px #376b1091;
+}

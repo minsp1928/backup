@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.oracle.S20220604.MainLoginMapper">
+    <settings>        <setting name="jdbcTypeForNull" value="NULL"/>    </settings>
+출처: https://koeiking11.tistory.com/entry/부적합한-열-유형-1111 [코더에서 개발자로 가는길.:티스토리]
+	
+	<select id="pms_selectLogin" resultType="Member">
+		select *
+		from member
+		where user_id = #{user_id}
+		and
+			  user_pw = #{user_pw}
+	
+	</select>
+
+</mapper>

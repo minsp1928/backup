@@ -1,0 +1,7 @@
+package com.oracle.S20220604.dao.pms;
+
+import com.oracle.S20220604.service.pms.MainLogin;
+
+public class MainLoginDaoImpl implements MainLoginDao, MainLogin {
+
+}
