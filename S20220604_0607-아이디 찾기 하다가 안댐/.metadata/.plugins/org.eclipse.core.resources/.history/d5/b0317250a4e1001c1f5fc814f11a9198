@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=EUC-KR"
+    pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>login</title>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<jsp:include page="/WEB-INF/views/base/header.jsp" flush="true">
+		<jsp:param value="" name=""/>
+</jsp:include>
+로그인
+아이디를 입력하세요
+비밀번호를 입력하세요
+아이디 / 비밀번호찾기
+로그인
+회원가입
+<h3 class="login_title">로그인</h3>
+	<div class="login_id">
+		<input type="text" name="user_id" class="text" required="required" placeholder="아이디를 입력하세요">
+	
+	</div>
+	<div class="login_pw">
+		<input type="password" name="user_ps" class="text" required="required">
+	</div>
+	<div class="find_idPw">
+		<a href="#">아이디</a>/<a href="#">비밀번호 찾기</a>
+	</div>
+
+
+
+
+<jsp:include page="/WEB-INF/views/base/footer.jsp" flush="true">
+	<jsp:param value="" name=""/>
+</jsp:include>
+</body>
+</html>

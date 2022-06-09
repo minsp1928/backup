@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>findID</title>
+</head>
+<body>
+<jsp:include page="/WEB-INF/views/base/header.jsp" flush="true">
+		<jsp:param value="" name=""/>
+</jsp:include>
+	<form action="findIdBtn" name="findIdBtn">
+		<div class="findID">
+			<a href="#">아이디찾기 </a> / <a href="#">비밀번호찾기 </a> 
+			<p>이름</p>
+			<input type="text" name="user_name" id="findName" placeholder="이름을 입력해주세요">
+			<p>이메일</p>
+			<input type="text" name="email" id="findEmail" placeholder="이메일을 입력해주세요">
+			<button id="findID_btn">확인</button><p>
+		</div>
+	</form>
+<jsp:include page="/WEB-INF/views/base/footer.jsp" flush="true">
+	<jsp:param value="" name=""/>
+</jsp:include>
+</body>
+</html>

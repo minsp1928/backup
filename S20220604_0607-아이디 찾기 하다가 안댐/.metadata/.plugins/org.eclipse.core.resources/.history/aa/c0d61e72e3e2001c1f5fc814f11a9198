@@ -1,0 +1,8 @@
+package com.oracle.S20220604.service.pms;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class MainLoginServieceImpl implements MainLoginService {
+
+}

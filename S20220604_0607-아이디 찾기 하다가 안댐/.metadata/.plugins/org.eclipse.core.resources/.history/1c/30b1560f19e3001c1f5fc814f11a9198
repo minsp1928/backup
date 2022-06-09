@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>findIdPwModal</title>
+</head>
+<script type="text/javascript">
+	$(function () {
+		$("#found_modalbtn").click(function(){
+			$(".foundback_modal").fadeIn();
+		});
+		$("#found_userid").click(function(){
+			$(".foundback_modal").fadeOut();
+		});
+	});
+</script>
+
+<body>
+<jsp:include page="/WEB-INF/views/base/header.jsp" flush="true">
+		<jsp:param value="" name=""/>
+</jsp:include>
+
+	<button id="found_modalbtn">모달창 테스트 아이디 받아오는거 하구싶</button>
+	<div class="foundback_modal" >
+		<div class="found_userid">
+		모달창 테스트
+		아이디는  ${user_id)입니다
+		이런거 하고싶다
+		<a></a>
+		</div>
+	</div>
+	
+<jsp:include page="/WEB-INF/views/base/footer.jsp" flush="true">
+	<jsp:param value="" name=""/>
+</jsp:include>
+</body>
+</html>
